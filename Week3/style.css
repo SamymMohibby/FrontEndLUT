@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: "Bitcount Prop Single Ink",Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+#pTag {
+    font-size: 1.5rem;
+}
+
+/*
+Found this beautiful button online
+*/
+button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/*
+Nice looking textareas and h3
+*/
+
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+h3 {
+  border-top: 2px solid #1375b0;
+  width: 100%;
+  float: none;
+  display: flex;
+}
+
+h3::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0;
+  font-size: 36px;
+  padding: 25px 35px;
+  background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
+  color: #fff;
+  float: left;
+  line-height: 0;
+  font-weight: 600;
+  clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
+}
+
+

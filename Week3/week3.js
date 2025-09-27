@@ -25,8 +25,13 @@ let num = 0;
 
 document.getElementById("plusBtn").onclick = function() {
     num++;
-    document.getElementById("thirdH3").textContent = num;
-    //console.log(`Number is ${num}`)
+    
+    if (num > 15 && num < 100) {
+        num = num + 100;
+    }else if (num > 100) {
+        num = num + 100;
+    }
+    document.getElementById("thirdH3").textContent = num; 
 }
 
 document.getElementById("minusBtn").onclick = function() {

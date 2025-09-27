@@ -41,7 +41,6 @@ document.getElementById("resetBtn").onclick = function() {
         num = 0;
         document.getElementById("thirdH3").textContent = num;
     }
-    
 }
 
 

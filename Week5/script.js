@@ -1,8 +1,8 @@
-const inputBox = document.getElementById("task-input");
-const listContainer = document.getElementById("list-container");
-const addBtn = document.getElementById("add-task-btn");
+const inputBox = document.getElementById("task-input"); //Text field for input.
+const listContainer = document.getElementById("list-container"); // UL element to hold the list items.
+const addBtn = document.getElementById("add-task-btn"); //Button to add tasks.
 
-document.getElementById("add-task-btn").onclick = function() {
+document.getElementById("add-task-btn").onclick = function() { //When the button is clicked, this function runs.
     let task = inputBox.value;
     if (task === '') {
         alert("You must write something!");
@@ -12,7 +12,7 @@ document.getElementById("add-task-btn").onclick = function() {
         li.innerHTML = task;
         listContainer.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
+        span.innerHTML = "\u00d7"; //Found on the web. Represents the multiplication sign (×) or close button.
         li.appendChild(span);
     }
     inputBox.value = "";
@@ -31,12 +31,12 @@ listContainer.addEventListener("click", function(e) {
 
 inputBox.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-        event.preventDefault();
-        addBtn.click();
+        event.preventDefault(); //This prevents the default action of the Enter key, which is to submit a form.
+        addBtn.click(); //Previously defined button variable.
     }
 });
 
-function saveData(){
+function saveData(){ //Saving data in local storage.
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
@@ -44,5 +44,4 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-showTask();
-
+showTask(); //Calling the function to show the task when the page loads.

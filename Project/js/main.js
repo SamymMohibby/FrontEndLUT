@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         return;
        }
        
-//       console.log(groupHeader);
+//console.log(groupHeader);
 
        const group = groupHeader.parentElement;
        const groupBody = group.querySelector('.faq-group-body');
@@ -39,4 +39,11 @@ document.addEventListener('DOMContentLoaded' , () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const mobileMenu = document.querySelector('.mobile-menu');
 
+  hamburgerButton.addEventListener('click', () =>
+    mobileMenu.classList.toggle('active')
+  );
+});

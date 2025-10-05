@@ -32,7 +32,7 @@ listContainer.addEventListener("click", function(e) {
 inputBox.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault(); //This prevents the default action of the Enter key, which is to submit a form.
-        addBtn.click(); //Previously defined button variable.
+        addBtn.click(); //Previously defined button onclick function.
     }
 });
 

@@ -9,3 +9,5 @@ Inside the project directory, open any of the available folders — such as Week
 Run with Live Server
 Right-click the index.html file (or the main HTML file) and select “Open with Live Server.”
 This will launch the project in your default web browser.
+
+-Samym Mohibby

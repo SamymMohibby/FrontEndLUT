@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+    <a href="#" class="logo">Samym</a>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experiences">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <section class = "home">
+        <div class = "home-img">
+            <img src="main.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hello! I'm <span>Samym</span> </h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Enthusiastic programmer getting into the tech world and making use of my educaiton.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/samym-mohibby-705008211/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SamymMohibby/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/samymmohibby/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire  me!</a>
+        </div>
+        
+    </section>
+
+      <section id="education-section">
+  <h2 id="education-title">Education</h2>
+  <div id="education" class="education">
+    <ul>
+      <li><span class="edu-title">Comprehensive school in Kouvola </span> — <span class="edu-meta">Kouvola · 20132019</span></li>
+      <li><span class="edu-title">Upper secondary school in Keravan Lukio</span> — <span class="edu-meta">Kerava · 2020-2023</span></li>
+      <li><span class="edu-title">Bachelor of Science, IT</span> — <span class="edu-meta">LUT · 2025</span></li>
+    </ul>
+  </div>
+</section>
+
+    <section id="contact" class="contact">
+  <div class="contact-inner">
+    <h2>Let’s work together</h2>
+    <p class="contact-intro">Tell me about your project and how I can help.</p>
+
+    <form class="contact-form" action="#" method="POST">
+      <!-- If you use Formspree or similar later, replace action="#" with their endpoint -->
+      <div class="form-grid">
+        <label>
+          Full name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Subject
+          <input type="text" name="subject" placeholder="Project topic">
+        </label>
+
+        <label>
+          Budget (optional)
+          <select name="budget">
+            <option value="">Select…</option>
+            <option value="under-1k">Under €1,000</option>
+            <option value="1k-5k">€1,000–€5,000</option>
+            <option value="5k-10k">€5,000–€10,000</option>
+            <option value="10k-plus">€10,000+</option>
+          </select>
+        </label>
+
+        <label class="full">
+          Message
+          <textarea name="message" rows="6" placeholder="What are we building?" required></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="btn">Send message</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
